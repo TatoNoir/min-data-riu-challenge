@@ -16,4 +16,26 @@
       </p>
     </header>
   </article>
+
+  @if (items.length > 0) {
+    <div
+      class="mx-auto overflow-x-auto max-w-[1542px] px-4 md:px-4 lg:px-6"
+      role="region"
+    >
+      <ul
+        #scroller
+        class="flex snap-x snap-mandatory gap-6 md:gap-5 scroll-smooth pb-2"
+        style="scrollbar-gutter: stable"
+      >
+        @for (item of items; track item.id) {
+          <li
+            data-slide
+            class="snap-start shrink-0 basis-[calc(66.666%-12px)] md:basis-[calc(50%-12px)] lg:basis-[calc(25%-16px)] xl:basis-[calc(25%-18px)]"
+          >
+            <app-carousel-item [carouselItem]="item" />
+          </li>
+        }
+      </ul>
+    </div>
+  }
 </section>
