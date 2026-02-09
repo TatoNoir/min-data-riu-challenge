@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../../components/hero/hero.component';
+import { CardsGridComponent } from '../../components/cards-grid/cards-grid.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [HeroComponent],
+  imports: [HeroComponent, CardsGridComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
