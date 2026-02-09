@@ -1,0 +1,77 @@
+<section class="bg-neutral-100 py-8 lg:py-12 md:px-12">
+  <article class="mx-auto max-w-[1542px] px-4 sm:px-6">
+    <div
+      class="grid gap-8 overflow-hidden rounded-lg bg-white p-8 shadow-[0_2px_4px_0_rgba(0,0,0,0.2)] lg:grid-cols-2"
+    >
+      <!-- Imagen con contenedor responsive-->
+      <figure
+        class="relative aspect-video overflow-hidden rounded-lg bg-neutral-300"
+      >
+        @if (imageUrl) {
+          <img
+            [ngSrc]="imageUrl"
+            [alt]="imageAlt"
+            fill
+            class="object-cover"
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            loading="lazy"
+          />
+        } @else {
+          <div
+            class="absolute inset-0 grid place-items-center text-neutral-500 font-semibold"
+          >
+            IMAGE
+          </div>
+        }
+      </figure>
+
+      <div class="flex flex-col justify-between gap-6">
+        <div class="space-y-3 sm:space-y-4">
+          <p class="flex items-center gap-2 text-base font-bold">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+              />
+            </svg>
+            Lorem ipsum dolor sit amet.
+          </p>
+
+          <h3 class="text-2xl/[28px] font-bold">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+            mi. Aliquam in hendrerit
+          </h3>
+
+          <p class="text-base text-neutral-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+            mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+            fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+            vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor
+            ornare leo, non suscipit magna interdum eu. Curabitur pellentesque
+            nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo
+            lacus at sodales sodales. Quisque sagittis orci ut diam condimentum,
+            vel euismod erat placerat. In iaculis arcu eros, eget tempus orci
+            facilisis id.
+          </p>
+        </div>
+
+        <div class="flex justify-end md:justify-end">
+          <button
+            type="button"
+            class="cursor-pointer rounded border border-[#E4002B] bg-[#E4002B] px-4 py-2 text-base/6 font-bold text-white transition-colors hover:bg-white hover:text-[#E4002B] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E4002B]"
+          >
+            Lorem ipsum.
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
