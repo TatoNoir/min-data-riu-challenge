@@ -14,7 +14,7 @@
             fill
             class="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
-            loading="lazy"
+            priority
           />
         } @else {
           <div
@@ -25,7 +25,9 @@
         }
       </figure>
 
-      <div class="flex flex-col justify-between gap-6">
+      <!-- Contenido de la sección-->
+
+      <div class="flex flex-col gap-6">
         <div class="space-y-3 sm:space-y-4">
           <p class="flex items-center gap-2 text-base font-bold">
             <svg
@@ -63,7 +65,7 @@
           </p>
         </div>
 
-        <div class="flex justify-end md:justify-end">
+        <div class="flex justify-end">
           <button
             type="button"
             class="cursor-pointer rounded border border-[#E4002B] bg-[#E4002B] px-4 py-2 text-base/6 font-bold text-white transition-colors hover:bg-white hover:text-[#E4002B] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#E4002B]"
