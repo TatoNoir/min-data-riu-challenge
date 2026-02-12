@@ -3,11 +3,10 @@ import { CardItemModel } from '../../models/card-item.model';
 import { CardItemComponent } from "../card-item/card-item.component";
 
 @Component({
-  selector: 'app-cards-grid',
-  standalone: true,
-  imports: [CardItemComponent],
-  templateUrl: './cards-grid.component.html',
-  styleUrl: './cards-grid.component.scss'
+    selector: 'app-cards-grid',
+    imports: [CardItemComponent],
+    templateUrl: './cards-grid.component.html',
+    styleUrl: './cards-grid.component.scss'
 })
 export class CardsGridComponent {
 

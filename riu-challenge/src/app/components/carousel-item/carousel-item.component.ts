@@ -4,11 +4,10 @@ import { NgOptimizedImage } from '@angular/common';
 
 
 @Component({
-  selector: 'app-carousel-item',
-  standalone: true,
-  imports: [NgOptimizedImage],
-  templateUrl: './carousel-item.component.html',
-  styleUrl: './carousel-item.component.scss'
+    selector: 'app-carousel-item',
+    imports: [NgOptimizedImage],
+    templateUrl: './carousel-item.component.html',
+    styleUrl: './carousel-item.component.scss'
 })
 export class CarouselItemComponent {
   readonly carouselItem = input.required<CarouselItemModel>();

@@ -3,11 +3,10 @@ import { CarouselItemComponent } from '../carousel-item/carousel-item.component'
 import { CarouselItemModel } from '../../models/carousel.item.model';
 
 @Component({
-  selector: 'app-products-preview',
-  standalone: true,
-  imports: [CarouselItemComponent],
-  templateUrl: './products-preview.component.html',
-  styleUrl: './products-preview.component.scss'
+    selector: 'app-products-preview',
+    imports: [CarouselItemComponent],
+    templateUrl: './products-preview.component.html',
+    styleUrl: './products-preview.component.scss'
 })
 export class ProductsPreviewComponent {
 
